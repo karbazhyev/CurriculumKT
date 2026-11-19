@@ -1,0 +1,33 @@
+# Code-only repository. Unlisted root files and directories stay local,
+# including data, samples, results, outputs, environments, and credentials.
+/*
+!/.gitignore
+!/README.md
+!/requirements-embeddings.in
+!/scripts/
+!/tests/
+!/research/
+
+# Publish maintained source and test code, excluding other directory contents.
+/scripts/*
+!/scripts/*.py
+/tests/*
+!/tests/test_*.py
+
+# One authored diagnostic utility lives alongside private research notes.
+/research/*
+!/research/debates/
+/research/debates/*
+!/research/debates/20261107_map_back_results/
+/research/debates/20261107_map_back_results/*
+!/research/debates/20261107_map_back_results/inspect_saved_structure.py
+
+# Local caches and account files must remain untracked anywhere.
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+.credentials/
+*.pem
+*.key

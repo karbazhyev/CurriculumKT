@@ -1,0 +1,3 @@
+# Retired MPNet environment; not used by the OpenAI API embedding method.
+# Original dependency input and hash lock are preserved under
+# results/foundationalassist_20261108/superseded_local_encoder/.
